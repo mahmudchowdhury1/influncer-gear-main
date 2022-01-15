@@ -236,14 +236,15 @@ footer p, h4{
    color:white;
 }
 
-.creative-1{
 
-    background-image: url(images/shape-6.png); 
 
-            background-repeat: no-repeat;
-            background-size: 50%;
-            background-position: center;
-    
+.creative-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  
+
 }
 
 footer{
@@ -256,10 +257,10 @@ footer{
          }
 
 
-        .creative-area:hover h2 {
+        .creative-1:hover .creative-img{
  
             transform: scale(1.3);
-            transition: transform 2s ease-in-out;
+            transition: transform 2s ease;
 
          }
 /* ---------------------------------
