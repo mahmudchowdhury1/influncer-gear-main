@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Licorice&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,400;1,300&family=The+Nautigal:wght@700&display=swap');
+
+
+body{
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: white
+}
+
+
+nav .main-div{
+
+    display:flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top:87px;
+    flex-wrap: wrap;
+}
+
+nav .menu ul{
+
+    display:flex;
+
+}
+
+nav .menu ul li{
+
+    list-style: none;
+    margin-right: 35px;
+}
+
+nav .menu ul li a{
+
+    text-decoration: none;
+    color:black;
+}
+
+
+
+.fa-shopping-cart{
+
+    color:black;
+    font-size: 24px;
+}
+
+.fa-search{
+
+    color:black;
+    font-size: 24px;
+}
+
+
+
+
+.influncer-div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.influncer-text-are h1{
+
+    font-size: 52px;
+    font-weight: bold;
+    color:black;
+}
+
+/* .influncer-text-are h1 .second-line{
+
+   margin-top: 2px;
+} */
+.influncer-text-are p{
+
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+}
+.influncer-image-area{
+
+    background-image: url(images/Circle\ design-svg.png);
+    background-repeat: no-repeat;
+     background-position: center;
+}
+.influncer-image-are img{
+
+       /* position: absolute; */
+       z-index: 7;
+}
+
+/* ---------------------------------------- */
+.influncer-image-area:hover img{
+ 
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+
+ }
+ 
+
+
+
+/* ---------------------------------------------- */
+.half-width{
+
+    width: 40%;
+    margin:5%;
+    padding:5%
+
+
+}
+
+.main-button{
+
+    text-decoration: none;
+  background-color: #E02C6D;
+  padding: 20px;
+  color:white;
+  font-weight: bold;
+  margin-top:25px;
+  border-radius: 35px;
+  
+}
+
+.logo-area {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px;
+    margin:100px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  border-color: rgba(211, 211, 211, 0.514);
+  border-image-slice: 1;
+  border-radius: 40px;
+   
+   
+}
+
+.fa-star, .fa-star-half-alt{
+
+
+    font-size: 10px;
+    color: #FB8200;
+}
+
+.collections div h2{
+
+    font-size: 28px;
+    color: #18191F;
+    font-weight: 500;
+    
+}
+
+.collections div h3{
+
+    font-size: 24px;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.87);
+}
+
+.collections div p , span {
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #787885;
+
+}
+.collections .collection-1.box{
+
+      
+    width:340px;
+    height: 500px;
+    margin-bottom: 60px;
+    padding:10px;
+}
+
+.collection-1{
+
+    box-shadow: 10px 10px 20px gray; 
+}
+.collections .box img{
+
+ 
+    /* align-items: center; */
+
+    width:335px;
+    height:180px;
+    
+}
+.collections-area{
+
+    /* margin:120px;
+    padding:40px; */
+
+}
+.collections{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content:center;
+    align-items: center; */
+    margin-bottom: 100px;
+    padding:100px;
+    
+    grid-column-gap: 5px;
+
+}
+
+.collection-text{
+
+    font-size: 28px;
+    font-weight: 600px;
+    text-align: center;
+}
+.collections-area .collection-link a {
+
+    text-decoration: none;
+  position:absolute;
+  right:300px;
+    color:rgba(224, 44, 109, 0.87);
+    font-weight: bold;
+    
+}
+
+.creative-area h1{
+color:white;
+    text-shadow: 10px 10px 40px blue;
+    text-align: center;
+}
+footer p, h4{
+     text-align: center;
+   align-items: center;
+   justify-content: center;
+   color:white;
+}
+
+.creative-1{
+
+    background-image: url(images/shape-6.png); 
+
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: center;
+    
+}
+
+footer{
+     padding: 20px;
+    background-color: black;
+}
+         nav{
+
+            flex-wrap: wrap;
+         }
+
+
+        .creative-area:hover h2 {
+ 
+            transform: scale(1.3);
+            transition: transform 2s ease-in-out;
+
+         }
+/* ---------------------------------
+            Media Queries 
+------------------------------------*/
+/* /* Mobile Devises */
+
+@media only screen  and (max-width: 688px){
+    .container{
+
+      width:100%;
+    }
+
+.main-div, .menu,  .logo-area, .collections,.creative-area, .footer-area {
+
+ grid-template-columns: repeat(1,1fr);
+}
+
+
+
+.influncer-div, .nav-heading, .menu, .logo-area,.main-div{ 
+
+  flex-direction: column;
+}
+}
+
+/* Tablet Devices  */
+
+@media only  screen and (min-width:688px) and (max-width:992px){
+.container{
+
+  width:100%;
+}
+.main-div, .menu,  .logo-area, .collections,.creative-area, .footer-area {
+
+    grid-template-columns: repeat(2,1fr);
+   }
+   
+   .influncer-div, .nav-heading, .menu, .logo-area,.main-div{ 
+
+    flex-direction: column;
+  }
+}
